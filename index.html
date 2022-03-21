@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora-js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="conteinerint">
+        <div>
+            <p >
+               <input type="number" name="txtn1" id="txtn1" min="0" placeholder="Digite um numero:" class="conteiner1">
+                <label for="txtn1"></label>
+
+                <input type="number" name="txtn2" id="txtn2" min="0" placeholder="Digite um numero:" class="conteiner1">
+                <label for="txtn2"></label>
+            </p>
+        </div>
+
+        <div>
+            <p  class="conteiner2">
+                <input type="radio" name="Sconta"
+                 id="soma" checked>
+                 <label for="soma">+</label>
+            </p>
+
+            <p  class="conteiner2">
+              <input type="radio" name="Sconta" id="sub" >
+              <label for="sub"> - </label>
+            </p>
+
+            <p class="conteiner2">
+               <input type="radio" name="Sconta" id="multi">
+               <label for="multi">X</label>
+            </p>
+
+            <p  class="conteiner2">
+               <input type="radio" name="Sconta" id="divisao" >
+               <label for="divisao">÷</label>
+            </p>
+    
+        </div>
+
+        <p >
+           <input type="button" value="calcular" onclick="calcular()" id="calculo" min="6">
+        </p>
+
+        <div id="res"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
